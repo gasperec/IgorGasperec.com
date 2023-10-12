@@ -34,8 +34,116 @@
 <!-- Main Content -->
 <main class="container">
     <!-- Replace with appropriate content for each page -->
-    <h1>Welcome to My Portfolio</h1>
-    <p>Introduction about yourself and what visitors can expect to find on your website.</p>
+    <h1 class="title-header">The Code Review </h1>
+    <div class="width">
+    <h1 class="signup_head">Signup for our newsletter</h1>
+    <p class="text">Get the latest news on how your code is doing right in your inbox.</p>
+    <hr class="rule1">
+    <hr class="rule2">
+
+	<form action="index.html" method="post">
+    	<div class="contact">
+        	<fieldset>
+        		<legend><span class="number">1</span>Contact Information</legend>
+
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="user_name" placeholder="Required ">
+
+                <label for="mail">Email Address</label>
+                <input type="email" id="mail" name="user_email" placeholder="Required ">
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="user_password" placeholder="Required ">
+
+                <label for="tel">Phone Number</label>
+                <input type="tel" id="tel" name="user_phone_number">
+
+                <label for="address">Street Address</label>
+                <input type="text" id="address" name="user_street_address">
+
+                <label for="city">City</label>
+                <input type="text" id="city" name="user_city">
+
+                <label for="state">State</label>
+                <select id="state" name="user_state">
+                  <option default>Choose State</option>
+                    <option value="AL">Albania</option>
+                    <option value="AD">Andorra</option>
+                    <option value="BY">Belarus</option>
+                    <option value="BE">Belgium</option>
+                    <option value="BA">Bosnia and Herzegovina</option>
+                    <option value="BG">Bulgaria</option>
+                    <option value="HR">Croatia</option>
+                    <option value="CY">Cyprus</option>
+                    <option value="CZ">Czech Republic</option>
+                    <option value="DK">Denmark</option>
+                    <option value="EE">Estonia</option>
+                    <option value="FO">Faroe Islands</option>
+                    <option value="FI">Finland</option>
+                    <option value="FR">France</option>
+                    <option value="DE">Germany</option>
+                    <option value="GI">Gibraltar</option>
+                    <option value="GR">Greece</option>
+                    <option value="HU">Hungary</option>
+                    <option value="IS">Iceland</option>
+                    <option value="IE">Ireland</option>
+                    <option value="IT">Italy</option>
+                    <option value="LV">Latvia</option>
+                    <option value="LI">Lichtenstein</option>
+                    <option value="LT">Lithuania</option>
+                    <option value="LU">Luxemburg</option>
+                    <option value="MK">Macedonia</option>
+                    <option value="MT">Malta</option>
+                    <option value="MD">Moldova</option>
+                    <option value="MC">Monaco</option>
+                    <option value="NL">Netherlands</option>
+                    <option value="NO">Norway</option>
+                    <option value="PL">Poland</option>
+                    <option value="PT">Portugal</option>
+                    <option value="RO">Romania</option>
+                    <option value="RU">Russia</option>
+                    <option value="SM">San Marino</option>
+                    <option value="RS">Serbia</option>
+                    <option value="SK">Slovakia</option>
+                    <option value="SI">Slovenia</option>
+                    <option value="ES">Spain</option>
+                    <option value="SE">Sweden</option>
+                    <option value="CH">Switzerland</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="GB">United Kingdom</option>
+                    <option value="VA">Vatican city</option>
+                    <option value="RS">Yugoslavia</option>
+                    <option value="IM">Isle of Man</option>
+                    <option value="RS">Kosovo</option>
+                    <option value="ME">Montenegro</option>
+                </select><br>
+                <label for="postal-code">Zip Code</label>
+                <input type="text" id="postal-code" maxlength="5" name="zip">
+             </fieldset>
+    	</div>
+    	<hr class="rule2">
+
+        <div class="buttons">
+             <fieldset>
+                  <legend><span class="number">2</span>Newsletter</legend>
+                  <p class="news_text">Select the newsletter you would like to recieve</p>
+                  <input type="checkbox" id="news1" value="news1" name="newsletter"><label for="news1">HTML News</label><br>
+                  <input type="checkbox" id="news2" value="news2" name="newsletter"><label for="news2">CSS News</label><br>
+                  <input type="checkbox" id="news3" value="news3" name="newsletter"><label for="news3">Javascript News</label>
+
+                  <p>Newsletter format</p>
+                  <input type="radio" id="html" value="html" name="format" checked="checked"><label for="html">HTML</label><br>
+                  <input type="radio" id="plain_text" value="plain_text" name="format" checked="checked"><label for="plain_text">Plain text</label><br>
+
+             </fieldset>
+        </div>
+
+        <label class="other_topics" for="topics">Other topics you'd like to hear about</label><br>
+        <textarea id="topics" name="other_topics"></textarea>
+
+    	<button type="submit">Sign Up</button>
+
+    </form>
 </main>
 
 <!-- Footer -->
