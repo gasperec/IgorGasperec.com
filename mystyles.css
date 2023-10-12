@@ -1,0 +1,169 @@
+/* Reset and other styles... */
+
+/* Navigation Styles */
+
+
+/* Your existing styles... */
+
+
+/* Reset some default styles for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #C7BFBF;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    background-color: #000000; /* Light background for content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0; /* Spacing around images */
+}
+
+.profile {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.profile img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30%;
+    background-color: black; /* Assuming your profile image has a black background */
+}
+
+.content {
+    flex: 2;
+}
+
+.social-icons {
+    margin-top: 20px;
+}
+
+.icon-link {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-link img {
+    width: 30px;
+    height: 30px;
+    filter: invert(100%); /* Make the icons white */
+}
+
+/* Your media queries and footer styles... */
+
+/* Navigation Styles */
+nav {
+    background-color: black; /* Change the background color to gold */
+    overflow: hidden;
+}
+
+nav a {
+    display: block;
+    padding: 14px 20px;
+    text-decoration: none;
+    color: #C7BFBF; /* Set the initial link color to a light color */
+    transition: color 0.3s, background-color 0.3s; /* Add smooth transitions */
+}
+
+nav a:hover {
+    background-color: black; /* Change the background color when hovered */
+    color: white; /* Change the text color when hovered */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+}
+
+
+/* Responsive break points */
+@media (min-width: 768px) {
+    body {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 992px) {
+    body {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 22px;
+    }
+}
+
+/* ADD THIS: Mobile Menu Styles */
+.menu-toggle {
+    display: none; /* Initially hide the menu toggle */
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+}
+.menu-toggle .bar {
+    background-color: #C7BFBF;
+    height: 3px;
+    width: 25px;
+    margin: 3px;
+    transition: 0.3s;
+}
+
+/* Mobile navigation styles */
+.nav-list {
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+/* Responsive breakpoint for mobile */
+@media (max-width: 768px) {
+    nav li {
+        float: none;
+        display: none; /* Hide menu items by default on mobile */
+    }
+
+    nav li a {
+        text-align: center;
+        padding: 15px;
+        width: 100%;
+        display: block;
+        border-bottom: 1px solid #C7BFBF;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+/* END of added CSS */
+
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+}
