@@ -29,6 +29,13 @@ body {
 	text-shadow: 2px 2px #000;
 	}
 
+h1 {
+	font-size: 1.5em;
+	font-weight: 600;
+	margin-bottom: 15px;
+	color: yellowgreen
+	}
+
 form {
 	margin: 10px auto;
 	padding: 10px 20px;
