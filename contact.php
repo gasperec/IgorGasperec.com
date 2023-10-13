@@ -33,27 +33,25 @@
     </nav>
 
 
-<!-- Main Content -->
-<main class="container">
-   
+<!-- Contact Page -->
+<main class="container contact-page">
+  <div class="title-header">
+    <h1>Contact Us</h1>
+  </div>
+  <form class="contact-form" action="submit-form.php" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
 
-    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
-        <label for="name">Name *</label>
-        <input type="text" id="name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
 
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="email" required>
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="phone">Phone</label>
-        <input type="tel" id="phone" name="phone">
-
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required></textarea>
-
-        <button type="submit">Send Message</button>
-    </form>
+    <input type="submit" value="Submit">
+  </form>
 </main>
-    
+
 <!-- Footer -->
 <footer>
     <p>&copy; 2023 Igor Gasperec. All rights reserved.</p>
