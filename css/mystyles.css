@@ -13,6 +13,10 @@
     box-sizing: border-box;
 }
 
+h1, h2, h3 {
+    color:  #FFFF00;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #000000;
