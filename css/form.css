@@ -17,15 +17,16 @@ body {
 	}
 
 .title-header {
-	color: #fff;
+	color: #d4ff00;
 	text-align: center;
-	font-size: 1.3em;
+	font-size: 2em;
 	font-weight: bolder;
 	background: radial-gradient(circle at top right, rgb(56, 188, 54), rgb(24, 79, 23));
-	margin: 0;
+	margin: 5px;
 	padding: 25px 0 25px 0;
 	width: 100%;
 	text-transform: uppercase;
+	text-shadow: 2px 2px #000;
 	}
 
 form {
