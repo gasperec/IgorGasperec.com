@@ -32,6 +32,29 @@
         </ul>
     </nav>
 
+
+<!-- Main Content -->
+<main class="container">
+    <!-- Replace with appropriate content for each page -->
+    <h1 class="title-header">Contact Us</h1>
+    <p>Please fill out the form below to send us a message.</p>
+
+    <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+        <label for="name">Name *</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email *</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone">
+
+        <label for="message">Message *</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+    </form>
+</main>
     
 <!-- Footer -->
 <footer>
@@ -40,3 +63,4 @@
 <script src="/js/script.js" defer></script>
 </body>
 </html>
+
