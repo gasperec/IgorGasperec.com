@@ -22,7 +22,7 @@ body {
 	font-size: 2em;
 	font-weight: bolder;
 	background: radial-gradient(circle at top right, rgb(56, 188, 54), rgb(24, 79, 23));
-	margin: 5px;
+	margin: 0px;
 	padding: 25px 0 25px 0;
 	width: 100%;
 	text-transform: uppercase;
