@@ -36,7 +36,7 @@
 <!-- Main Content -->
 <main class="container">
     <!-- Replace with appropriate content for each page -->
-    <h1 class="title-header">Contact Us</h1>
+    <h1>Contact Us</h1>
     <p>Please fill out the form below to send us a message.</p>
 
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
