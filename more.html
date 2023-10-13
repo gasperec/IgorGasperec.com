@@ -32,33 +32,29 @@
         </ul>
     </nav>
     <main class="more-page">
-        <header>
-            <h1>Daily thoughts</h1>
-        </header>
-        <form action="login.php" method="post">
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br>
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <button type="submit">Login</button>
+        <h1>User Registration</h1>
+    <form action="register.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br>
+        <label for="confirm_password">Confirm Password:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+        <br>
+        <a href="register.php:"><button type="submit">Register</button></a>
+    </form>
+    <div id="entry-form" style="display:none;">
+        <h2>New Entry</h2>
+        <form action="save-entry.php" method="post">
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <label for="thoughts">Thoughts:</label>
+            <textarea id="thoughts" name="thoughts" required></textarea>
+            <button type="submit">Save Entry</button>
         </form>
-        <div class="diary-entry">
-            <h2>Today's Date</h2>
-            <p>Today's Thoughts</p>
-        </div>
-        <button id="add-entry">Add Entry</button>
-        <div id="entry-form" style="display:none;">
-            <h2>New Entry</h2>
-            <form>
-                <label for="date">Date:</label>
-                <input type="date" id="date" name="date" required>
-                <label for="thoughts">Thoughts:</label>
-                <textarea id="thoughts" name="thoughts" required></textarea>
-                <button type="submit">Save Entry</button>
-            </form>
-        </div>
+    </div>
     </main>
 
 <!-- Footer -->
