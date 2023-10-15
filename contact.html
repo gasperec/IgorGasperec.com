@@ -7,7 +7,8 @@
         <title>Igor Gasperec - Portfolio</title>
         <link rel="stylesheet" href="/css/normalise.css">
         <link rel="stylesheet" href="/css/mystyles.css">
-      
+        <link rel="stylesheet" href="/css/form.css">
+       
     </head>
     <body>
     
@@ -23,7 +24,7 @@
         <ul class="nav-list">
             <li><a href="/index.html">Home</a></li>
             <li><a href="/about.html">About Me</a></li>
-            <li><a href="/contact.php">Contact</a></li>
+            <li><a href="/contact.html">Contact</a></li>
             <li><a href="/experience.html">Experience</a></li>
             <li><a href="/resume.html">Resume</a></li>
             <li><a href="/work.html">Work</a></li>
@@ -31,17 +32,29 @@
         </ul>
     </nav>
 
-<!-- Main Content -->
-<main class="container">
-    <!-- Replace with appropriate content for each page -->
-    <h1>My CSS Projects:</h1>
-    <p></p>
-</main>
+
+<!-- Contact Page -->
+<form class="contact-form">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email address:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+    </div>
+    <button type="submit">Submit</button>
+  </form>
 
 <!-- Footer -->
 <footer>
     <p>&copy; 2023 Igor Gasperec. All rights reserved.</p>
 </footer>
-<script src="/JS/script.js"></script>
+<script src="/js/script.js" defer></script>
 </body>
 </html>
+

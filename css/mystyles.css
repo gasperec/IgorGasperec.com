@@ -223,3 +223,39 @@ form {
     padding: 20px;
     border-radius: 5px;
   }
+
+ /* Dropdown menu */
+.nav-list li {
+    position: relative;
+  }
+  
+  .nav-list ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1;
+    display: none;
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+  }
+  
+  .nav-list li:hover ul {
+    display: block;
+  }
+  
+  .nav-list ul li {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .nav-list ul li:last-child {
+    border-bottom: none;
+  }
+  
+  .nav-list ul li a {
+    display: block;
+    padding: 10px;
+  }

@@ -1,59 +1,30 @@
-/* Add a new CSS rule for the contact form */
 .contact-form {
+	border: 2px solid #000;
+	border-radius: 5px;
+	padding: 10px;
+  }
+  
+  .form-group {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	margin-top: 50px;
   }
   
-  .contact-form label {
-	display: block;
+  label {
+	margin-bottom: 5px;
+  }
+  
+  input, textarea {
+	padding: 5px;
+	border: none;
+	border-radius: 3px;
 	margin-bottom: 10px;
-	font-size: 1.2em;
-	font-weight: bold;
-	color: #2d3945;
   }
   
-  .contact-form input[type="text"],
-  .contact-form input[type="email"],
-  .contact-form textarea {
-	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
+  button[type="submit"] {
+	background-color: #000;
+	color: #fff;
+	padding: 5px 10px;
 	border: none;
-	border-radius: 5px;
-	background-color: #f2f2f2;
-	font-size: 1.1em;
-	color: #2d3945;
-  }
-  
-  .contact-form input[type="submit"] {
-	background-color: #d4ff00;
-	color: #2d3945;
-	border: none;
-	border-radius: 5px;
-	padding: 10px 20px;
-	font-size: 1.1em;
-	font-weight: bold;
+	border-radius: 3px;
 	cursor: pointer;
-	transition: background-color 0.3s ease-in-out;
-  }
-  
-  .contact-form input[type="submit"]:hover {
-	background-color: #56b800;
-  }
-  
-  /* Add a new CSS rule for the contact page */
-  .contact-page {
-	background-color: #f2f2f2;
-	padding: 50px 0;
-  }
-  
-  .contact-page h1 {
-	color: #d4ff00;
-	font-size: 2em;
-	font-weight: bold;
-	text-align: center;
-	text-shadow: 2px 2px #000;
-	margin-bottom: 50px;
   }
